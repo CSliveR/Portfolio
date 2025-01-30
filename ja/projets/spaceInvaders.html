@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Space Invaders</title>
+</head>
+
+<body class="scroll-reveal">
+    <header>
+        <button id="burgerBtn">
+            <img src="../../img/burger-icon.png" alt="icone burger icon">
+        </button>
+
+        <div id="themeContainer">
+            <img id="lightTheme" src="../../img/light_mode_16dp_FFFFFF_FILL1_wght100_GRAD0_opsz20.png" alt="icone soleil">
+            <img id="darkTheme" src="../../img/dark_mode_16dp_000000_FILL1_wght100_GRAD0_opsz20.png" alt="icone lune">
+        </div>
+        <nav>
+            <ul>
+                <li>ドルイシュ・イリエス</li>
+                <li>ホーム</li>
+                <li class="active">大学プロジェクト</li>
+                <li>個人的なプロジェクト</li>
+                <li>スキル</li>
+                <li>連絡</li>
+            </ul>
+        </nav>
+        <div class="horizontalContainer">
+            <div id="dropdown" class="horizontalContainer">
+                <img src="../../img/icons8-japon-32.png" alt="langue actuelle">
+                <!-- Menu déroulant -->
+                <div id="dropdown-content">                    
+                    <a href="../../en/projets/spaceInvaders.html"><img src="../../img/icons8-etats-unis-32.png" alt="Anglais"> English</a>
+                    <a href="../../fr/projets/spaceInvaders.html"><img src="../../img/icons8-la-france-32.png" alt="Français"> Français</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Space invaders</h1>
+
+        <section class="horizontalContainer">
+            <div class="verticalContainer">
+                <h2>Project description</h2>
+                <p>
+                    This project is a simplified Space Invaders.
+                    There is a menu where you have to press the 'S' key to start playing.
+                    The goal of the game is to avoid the falling fireballs with the ship by using directionnal arrows 
+                    to survive as long as possible against a random number of fireballs waves. 
+                    If the ship is hit by a fireball, the game is lost.
+                    However, if the ship was never hit and all the waves were passed, the game is won.
+                    We can restart a game by pressing the 'C' key to play again.
+                    This project may have improvements in the future.
+                </p>
+
+                <div class="verticalContainer">
+                    <h2>Skills acquired</h2>
+                    <p>Increasing my javascript skills.</p>
+                    <p>Tenacity against problems.</p>
+                    <p>Search informations on internet or on documentation.</p>
+                </div>
+                <button onclick="window.location.href='https://github.com/CSliveR/Mini-Space-Invaders'">Visit the Github project</button>
+            </div>
+
+            <div>
+                <img class="resizeImg" src="../../img/menu-spaceInvaders.png" alt="Menu du jeu Space Invaders">
+                <img class="resizeImg" src="../../img/spaceInvaders.png" alt="Ecran de jeu Space Invaders">
+            </div>
+        </section>
+    </main>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

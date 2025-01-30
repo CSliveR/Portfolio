@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraction de données en SQL</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="scroll-reveal">
+    <header>
+        <button id="burgerBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="themeContainer">
+            <img id="lightTheme" src="../../img/light_mode_16dp_FFFFFF_FILL1_wght100_GRAD0_opsz20.png" alt="icone soleil">
+            <img id="darkTheme" src="../../img/dark_mode_16dp_000000_FILL1_wght100_GRAD0_opsz20.png" alt="icone lune">
+        </div>
+        <nav>
+            <ul>
+                <li>Ilyès Drouiche</li>
+                <li>Accueil</li>
+                <li>Projets universitaires</li>
+                <li class="active">Projets personnels</li>
+                <li>Mes compétences</li>
+                <li>Me contacter</li>
+            </ul>
+        </nav>
+        <div class="horizontalContainer">
+            <div id="dropdown" class="horizontalContainer">
+                <img src="../../img/icons8-la-france-32.png" alt="langue actuelle">
+                <!-- Menu déroulant -->
+                <div id="dropdown-content">                    
+                    <a href="../../en/pages/excuses.html"><img src="../../img/icons8-etats-unis-32.png" alt="Anglais"> English</a>
+                    <a href="../../ja/pages/excuses.html"><img src="../../img/icons8-japon-32.png" alt="Japonais"> 日本語</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="horizontalContainer">
+        <main>
+            <h1>Exploitation d'une BD en SQL</h1>
+            <section class="horizontalContainer">
+                <div class="verticalContainer">
+                    <h2>Description du projet</h2>
+                    <p>
+                       Pour ce projet, je devais réaliser une extraction de données sur une base de données open source (celle d'openFood Fact) qui 
+                       recensait plusieurs centaines de produits avec diverses informations nutritionnelles ainsi que leurs nutriscores. Il a fallu explorer les données, 
+                       supprimer les données mal renseignées, trouver les données intéressantes pour répondre au problème, manipuler ces données puis les extraire dans un fichier CSV. 
+                       Ensuite, il a fallu réutiliser ces données pour faire des graphiques en utilisant RStudio et mener une analyse mathématique entièrement rédigée en anglais.
+                    </p>
+                    <div class="verticalContainer">
+                        <h2>Compétences acquises</h2>
+                        <p>Exploration et analyse des données</p>
+                        <p>Interrogation de la base de données</p>
+                        <p>Nettoyage des données erronées ou incomplètes</p>
+                        <p>Sélection de données pertinentes</p>
+                        <p>Exportation des données sous forme de fichiers CSV exploitables</p>
+                        <p>Création de graphiques avec RStudio pour visualiser et analyser les résultats</p>
+                        <p>Analyse complète des résultats en anglais</p>
+                    </div>
+                    <button onclick="window.location.href='https://github.com/CSliveR/BUT-1A/tree/main/S2.04'">Visiter le projet Github</button>
+                </div>
+
+                <!-- <div>
+                    <img src="../../img/nutriscore1.png" alt="Menu du jeu Space Invaders">
+                    <img class="resizeImg" src="../../img/nutriscore2.png" alt="Ecran de jeu Space Invaders">
+                </div> -->
+            </section>
+        </main>
+    </div>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

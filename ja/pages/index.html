@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="scroll-reveal">
+    <header>
+        <button id="burgerBtn">
+            <img id="burger-icon" src="../../img/burger-icon.png" alt="icone burger icon">
+        </button>
+
+        <div id="themeContainer">
+            <img id="lightTheme" src="../../img/light_mode_16dp_FFFFFF_FILL1_wght100_GRAD0_opsz20.png" alt="icone soleil">
+            <img id="darkTheme" src="../../img/dark_mode_16dp_000000_FILL1_wght100_GRAD0_opsz20.png" alt="icone lune">
+        </div>
+        <nav>
+            <ul>
+                <li>ドルイシュ・イリエス</li>
+                <li class="active">ホーム</li>
+                <li>大学プロジェクト</li>
+                <li>個人的なプロジェクト</li>
+                <li>スキル</li>
+                <li>連絡</li>
+            </ul>
+        </nav>
+        <div class="horizontalContainer">
+            <div id="dropdown" class="horizontalContainer">
+                <img src="../../img/icons8-japon-32.png" alt="langue actuelle">
+                <!-- Menu déroulant -->
+                <div id="dropdown-content">                    
+                    <a href="../../en/pages/index.html"><img src="../../img/icons8-etats-unis-32.png" alt="Anglais"> English</a>
+                    <a href="../../fr/pages/index.html"><img src="../../img/icons8-la-france-32.png" alt="Français"> Français</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="horizontalContainer">
+            <div class="verticalContainer">
+                <h1 id="homeTitle">こんにちは、名前はドルイシュ・イリエスです<span>二年生コンピューターサイエンス学生。</span></h1>
+                <p>
+                    十年前から、コンピューターを使ってたくさんの時間を過ごしました。 これまでの年月のおかげで、このツールは魅力的であり、
+                    誰にでも影響を与える作品を作り出せることが分かりました。Whether it is a website, an application for entertainment, learning or helping 
+                    people with a specific need. Participating in its realization has long been an ideal. 
+                    This is the reason I study computer science to work in later.
+                </p>
+            </div>
+        </section>
+        
+        <section class="permanent-horizontalContainer">
+            <h2>Find me on</h2>
+            <a href="https://www.linkedin.com/in/ilyes-drouiche-5b2695271/" target="_blank"><img src="../../img/linkedin.png" alt="icone linkedin"></a>
+            <a href="contact.html"><img src="../../img/gmail.png" alt="icone gmail"></a>
+            <a href="https://github.com/CSliver" target="_blank"><img src="../../img/github.png" alt="icone github"></a>
+        </section>
+        
+        <section class="real">
+            <div class="center">
+                <h1>Achievements</h1>
+            </div> 
+            
+            <div class="horizontalContainer">
+                <div class="verticalContainer">
+                    <h2>大学プロジェクト</h2>
+                    <img src="../../img/cgi.png" alt="Image de la page d'acceuil du site web">
+                </div>
+
+                <div class="verticalContainer" id="realAcceuil">
+                    <h2>Website for an IT service company</h2>
+                    <p>
+                        Development of an information technology company website aimed at third grade students looking for an internship.
+                    </p>
+                    
+                    <div class="horizontalContainer">
+                        <button onclick="window.location.href='../projets/cgi.html'">See in details</button>
+                        <button onclick="window.location.href='projets-iut.html'">See more</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="horizontalContainer">
+                <div class="verticalContainer">
+                    <h2>個人的なプロジェクト</h2>
+                    <img src="../../img/bataille1.png" alt="">
+                </div>
+
+                <div class="verticalContainer" id="realAcceuil2">
+                    <h2>カードバトルゲーム</h2>
+                    <p>Card game made during 2023 summer holiday. 
+                    This project was based on a pdf found on the internet and a more detailed explanatory video of the rules of the game.
+                    </p>
+                    <div class="horizontalContainer">
+                        <button onclick="window.location.href='../projets/bataille.html'">See in details</button>
+                        <button onclick="window.location.href='projets-perso.html'">See more</button> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Ilyès Drouiche</title>
+</head>
+
+<body class="scroll-reveal"> 
+    <header>
+        <button id="burgerBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="themeContainer">
+            <img id="lightTheme" src="../../img/light_mode_16dp_FFFFFF_FILL1_wght100_GRAD0_opsz20.png" alt="icone soleil">
+            <img id="darkTheme" src="../../img/dark_mode_16dp_000000_FILL1_wght100_GRAD0_opsz20.png" alt="icone lune">
+        </div>
+        <nav>
+            <ul>
+                <li>Ilyès Drouiche</li>
+                <li class="active">Accueil</li>
+                <li>Projets universitaires</li>
+                <li>Projets personnels</li>
+                <li>Mes compétences</li>
+                <li>Me contacter</li>
+            </ul>
+        </nav>
+        <div class="horizontalContainer">
+            <div id="dropdown" class="horizontalContainer">
+                <img src="../../img/icons8-la-france-32.png" alt="langue actuelle">
+                <!-- Menu déroulant -->
+                <div id="dropdown-content">                    
+                    <a href="../../en/pages/excuses.html"><img src="../../img/icons8-etats-unis-32.png" alt="Anglais"> English</a>
+                    <a href="../../ja/pages/excuses.html"><img src="../../img/icons8-japon-32.png" alt="Japonais"> 日本語</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="horizontalContainer">
+            <div class="verticalContainer">
+                <h1 id="homeTitle">Bonjour, Je suis Ilyès Drouiche<span>Etudiant en deuxième année de BUT informatique</span></h1>
+                <p>
+                    Depuis presque 10 ans, j’ai passé beaucoup de temps avec un ordinateur entre les mains. 
+                    J’ai pu observer grâce à toutes ses années que cet outil est fascinant et permet des créations qui peuvent toucher n’importe qui. 
+                    Que ce soit un site web, une application pour se divertir, apprendre ou aider des personnes ayant un besoin spécifique. 
+                    Participer à sa réalisation est depuis longtemps un idéal. 
+                    C’est la raison pour laquelle j’étudie l’informatique afin de pouvoir y travailler plus tard.
+                </p>
+            </div>
+        </section>
+
+        <section class="permanent-horizontalContainer">
+            <h3>Retrouvez-moi sur</h3>
+            <a href="https://www.linkedin.com/in/ilyes-drouiche-5b2695271/" target="_blank"><img src="../../img/linkedin.png" alt="icone linkedin"></a>
+            <a href="contact.html"><img src="../../img/gmail.png" alt="icone gmail"></a>
+            <a href="https://github.com/CSliver" target="_blank"><img src="../../img/github.png" alt="icone github"></a>
+        </section>
+
+        <section class="real">
+            <h2>Réalisations</h2>     
+            <div class="horizontalContainer">
+                <div class="verticalContainer">
+                    <h3>Projets universitaires</h3>
+                    <img src="../../img/cgi.png" alt="Image de la page d'acceuil du site web">
+                </div>
+
+                <div class="verticalContainer">
+                    <h3>Site web pour une ESN</h3>
+                    <p>
+                        Développement d'un site web d'une entreprise de services numériques à destination d'élèves de troisième pour 
+                        une recherche de stage.
+                    </p>
+                    
+                    <div class="horizontalContainer">
+                        <button onclick="window.location.href='../projets/cgi.html'">Voir en détail</button>
+                        <button onclick="window.location.href='projets-iut.html'">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="horizontalContainer">
+                <div class="verticalContainer">
+                    <h3>Projets personnels</h3>
+                    <img src="../../img/bataille1.png" alt="image du jeu de bataille">
+                </div>
+
+            <div class="verticalContainer">
+                <h3>Jeu de bataille de cartes</h3>
+                    <p>
+                        Jeu de cartes réalisé pendant les vacances d'été 2023. 
+                        Le cadre de ce projet repose sur un pdf trouvé sur internet et une vidéo explicative plus détaillée des règles du jeu. 
+                    </p>
+                    <div class="horizontalContainer">
+                        <button onclick="window.location.href='../projets/bataille.html'">Voir en détail</button>
+                        <button onclick="window.location.href='projets-perso.html'">Voir plus</button> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

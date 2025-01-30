@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>CGI</title>
+</head>
+
+<body class="scroll-reveal">
+    <header>
+        <button id="burgerBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div id="themeContainer">
+            <img id="lightTheme" src="../../img/light_mode_16dp_FFFFFF_FILL1_wght100_GRAD0_opsz20.png" alt="icone soleil">
+            <img id="darkTheme" src="../../img/dark_mode_16dp_000000_FILL1_wght100_GRAD0_opsz20.png" alt="icone lune">
+        </div>
+        <nav>
+            <ul>
+                <li>Ilyès Drouiche</li>
+                <li>Accueil</li>
+                <li class="active">Projets universitaires</li>
+                <li>Projets personnels</li>
+                <li>Mes compétences</li>
+                <li>Me contacter</li>
+            </ul>
+        </nav>
+        <div class="horizontalContainer">
+            <div id="dropdown" class="horizontalContainer">
+                <img src="../../img/icons8-la-france-32.png" alt="langue actuelle">
+                <!-- Menu déroulant -->
+                <div id="dropdown-content">                    
+                    <a href="../../en/pages/excuses.html"><img src="../../img/icons8-etats-unis-32.png" alt="Anglais"> English</a>
+                    <a href="../../ja/pages/excuses.html"><img src="../../img/icons8-japon-32.png" alt="Japonais"> 日本語</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Site web pour une ESN</h1>
+        <section class="horizontalContainer">
+            <div class="verticalContainer">
+                <h2>Description du projet</h2>
+                <p>
+                    Pour ce projet, deux de mes camarades et moi devions réaliser le site web de l'entreprise de services numériques 
+                    CGI à destination d'éléves de troisième qui seraient interessés par un stage dans cette ESN.
+                    Ce projet s'est découpé en 3 phases: le recueil des besoins où nous avons recueilli des informations sur l'entreprise,
+                    la conception où nous avons construit la maquette de notre site web et la réalisation où nous avons codé le site web. 
+                </p>
+                <div class="verticalContainer">
+                    <h2>Compétences acquises</h2>
+                    <p>Synthétiser des informations pour les adapter au public visé.</p>
+                    <p>Réaliser une maquette avec un outil de conception.</p>
+                    <p>Réaliser un site web en collaboration.</p>
+                    <p>Mettre en place des outils pour communiquer au sein de l'équipe.</p>
+                </div>
+                <div class="horizontalContainer">
+                    <button onclick="window.location.href='https://github.com/CSliveR/ITC-website-project'" >Visiter le projet Github</button>
+                    <button onclick="window.location.href='https://iut-info-uga.github.io/'">Accéder au site</button>
+                </div>
+            </div>
+<!-- 
+            <div class="gridContainer3x2">
+                <img class="smallImg" src="../../img/cgi.png" alt="Image de la page d'acceuil du site web">
+                <img class="smallImg" src="../../img/cgi2.png" alt="Image de la page 'Engagements' du site web">
+                <img class="smallImg" src="../../img/cgi3.png" alt="Image de la page 'Services' du site web">
+                <img class="smallImg" src="../../img/cgi4.png" alt="Image de la page 'Valeurs' du site web">
+                <img class="smallImg" src="../../img/cgi5.png" alt="Image de la page 'Légal' du site web">
+            </div> -->
+        </section>
+    </main>
+    <script src="../../js/script.js"></script>  
+</body>
+</html>

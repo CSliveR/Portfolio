@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
+:root{
+    /*color*/
+    --textColor: #262626;
+    --textColorHover: #f1f1f1;
+    --backgroundLight: linear-gradient(135deg, #f8d1e7, #f1f1f1, #f8d1e7);
+    --backgroundDark: linear-gradient(135deg, #012345, #101010);
+   /*--------------------------------------------------------*/
+    /*fontSize*/
+    --text-font-size: clamp(1rem, 1.5vw, 1.125rem);
+    --h1-size: clamp(2rem, 5vw, 3rem);
+    --h2-size: clamp(1.5rem, 3vw, 2rem);
+    --h3-size: clamp(1rem, 2.5vw, 1.5rem);
+    --text-line-height: 1.6;
+    --header-line-height: 1.25;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.horizontalContainer, .permanent-horizontalContainer{
+    display: flex; flex-direction: row;
+}
+
+.verticalContainer {
+    display: flex; flex-direction: column;
+}
+
+.horizontalContainer, .verticalContainer, .permanent-horizontalContainer{
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 0.7em;
+}
+
+body{
+    background: var(--backgroundLight); 
+    color: var(--textColor);
+    transition: color 0.3s;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
+    background-size: 200% 200%; 
+    animation: gradientSlide 10s ease-in-out infinite; 
+}
+
+
+@keyframes gradientSlide {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1, h2, h3{
+    font-family: 'Nunito', sans-serif; 
+    line-height: var(--header-line-height);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+/* Responsive header font sizes */
+h1 {font-size: var(--h1-size);}
+h2 {font-size: var(--h2-size);}
+h3 {font-size: var(--h3-size);}
+
+:lang(ja) body, :lang(ja) p {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+:lang(ja) h1, :lang(ja) h2, :lang(ja) h3 {
+    font-family: 'M PLUS Rounded 1c', sans-serif; 
+}
+
+main {
+    width: 90%;
+    margin: 0 auto; 
+}
+
+section {
+    width: 80%; 
+    margin: 0 auto;
+}
+
+p {
+    max-width: 900px; 
+    margin: 0 auto; 
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+button{
+    border-radius: 0.7em;
+    margin-right: 1em;
+    min-width: 13rem;
+    min-height: 2rem;
+    padding: 0.25em;
+    background-color: var(--textColorHover);
+    color: var(--textColor);
+}
+
+nav ul li:hover, button:hover,.active, #dropdown-content a:hover, .cardContainer:hover{
+    background-color: var(--textColor);
+    color: var(--textColorHover);
+}
+.resizeImg{width: 10rem;}
+
+.smallImg{height: 10rem;}
+
+#faceImg{margin-right: 5%; height: 14rem;}
+
+/*--------------------------------------------------------*/
+/*navbar style*/
+
+#lightTheme{
+    display: none;
+}
+
+#lightTheme, #darkTheme{
+    height: 90%;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 4em;
+    background-color: var(--textColorHover);
+    z-index: 1;
+}
+
+header div{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+nav{
+    width:85%;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 1em; 
+    width: 100%;
+    text-align: center;
+    border-radius: 10rem;
+    white-space: nowrap;
+}
+
+#burgerBtn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+body[actualTheme="dark"] #burger-menu i {
+    color:var(--textColor); /* Couleur de l'icône en mode sombre */
+}
+
+/*navbar style - end*/
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/*languages dropdown menu style*/
+
+#dropdown{
+    position: relative;
+    transform: translate(25%, 25%);
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--textColorHover);
+    top: 100%;
+}
+
+#dropdown-content a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5em;
+    color: var(--textColor);
+}
+
+#dropdown:hover #dropdown-content {
+    display: block;
+}
+
+/*languages dropdown menu style - end*/
+/*--------------------------------------------------------*/
+
+/* Initialisation de l'élément caché avant le scroll */
+.scroll-reveal > *{
+    opacity: 0;  /* Cacher l'élément par défaut */
+    transform: translateY(50px);  /* Positionner l'élément un peu en bas de son emplacement */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;  /* Animation de la transition */
+}
+
+/* L'élément devient visible et se déplace à sa position d'origine une fois visible */
+.scroll-reveal > *.scroll-reveal-visible  {
+    opacity: 1;
+    transform: translateY(0);  /* L'élément revient à sa position d'origine */
+}
+
+/*--------------------------------------------------------*/
+/*pages/index.html style*/
+
+#homeTitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.real .verticalContainer{
+    width: 50%;
+    gap: 0.25em;
+}
+
+/*pages/index.html style - end*/
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/*project pages style*/
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+  
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--textColor);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+/*--------------------------------------------------------*/
+/*pages/competences.html style*/
+
+.gridContainer3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/*pages/competences.html style - end*/
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/*pages/contact.html style*/
+
+#contactMain{
+    justify-content: center;
+    align-items: center;
+}
+
+form input, textarea{
+    width: 100%;
+    margin: 1rem;               
+    padding: 0.5rem;
+}
+
+textarea{
+    padding-bottom: 10rem;
+}
+
+#email:invalid:not(:placeholder-shown){
+    border-color: tomato;
+    background-color: pink;
+}
+
+/*pages/contact.html style - end*/
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/*responsive design style*/
+@media screen and (max-width: 37.5rem){
+    /*600px*/
+}
+
+@media screen and (max-width: 56.25rem){
+    /*900px*/
+    .horizontalContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridContainer, .gridContainer3 {
+        grid-template-columns: 1fr; /* Une seule colonne */
+        gap: 1.5rem; 
+    }
+
+    #burgerBtn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+        display: block; /* Afficher le bouton burger en mode mobile */
+    }
+    
+    #burgerBtn img{
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Quand le menu est ouvert, afficher le nav */
+    header.open-menu nav{
+        display: flex;
+    }
+
+    nav{
+        display: none; /*cachée par défaut*/
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: var(--textColorHover);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        backdrop-filter: blur(10px);
+    }
+
+    nav ul li {
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    #themeContainer{
+        z-index: 2;
+    }
+}
+
+
+@media screen and (max-width: 75rem) {
+    /*1200px*/
+    /*.gridContainer2x5{
+        display: grid;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }*/
+}   
+
+/*responsive design style - end*/
+/*--------------------------------------------------------*/
+
+
+/*--------------------------------------------------------*/
+/*animations*/
+
+@keyframes identifier {
+    
+}
+
+
+
+
+/*animations - end*/
+/*--------------------------------------------------------*/

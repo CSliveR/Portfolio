@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bataille de cartes</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="scroll-reveal">
+    <header>
+        <button id="burgerBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="themeContainer">
+            <img id="lightTheme" src="../../img/light_mode_16dp_FFFFFF_FILL1_wght100_GRAD0_opsz20.png" alt="icone soleil">
+            <img id="darkTheme" src="../../img/dark_mode_16dp_000000_FILL1_wght100_GRAD0_opsz20.png" alt="icone lune">
+        </div>
+        <nav>
+            <ul>
+                <li>Ilyès Drouiche</li>
+                <li>Home</li>
+                <li>University projects</li>
+                <li class="active">Personal projects</li>
+                <li>My skills</li>
+                <li>Contact me</li>
+            </ul>
+        </nav>
+        <div class="horizontalContainer">
+            <div id="dropdown" class="horizontalContainer">
+                <img src="../../img/icons8-etats-unis-32.png" alt="langue actuelle">
+                <!-- Menu déroulant -->
+                <div id="dropdown-content">                    
+                    <a href="../../fr/projets/bataille.html"><img src="../../img/icons8-la-france-32.png" alt="Français"> Français</a>
+                    <a href="../../ja/projets/bataille.html"><img src="../../img/icons8-japon-32.png" alt="Japonais"> 日本語</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Card battle game</h1>
+        
+        <section class="horizontalContainer">
+            <div class="verticalContainer">
+                <h2>Project description</h2>
+                <p>
+                    This project is a card battle guided by a pdf found on internet and a video which details the internal flow of the game. 
+                    The resources used are mentionned in the GitHub project repository. This project allowed me to develop more skills
+                    in object oriented programming and manipulate random objects. 
+                </p>
+                <div class="verticalContainer">
+                    <h2>Skills acquired</h2>
+                    <p>Finding sources of information to carry out a project idea.</p>
+                    <p>Additionnal experience in object programming.</p>
+                    <p>Manipulating the random java class.</p>
+                </div>
+                <button onclick="window.location.href='https://github.com/CSliveR/Card-game'">Visit the Github project</button>
+            </div>
+
+            <div>
+                <img src="../../img/bataille1.png" alt="Menu du jeu Space Invaders">
+                <img class="resizeImg" src="../../img/bataille2.png" alt="Ecran de jeu Space Invaders">
+            </div>
+        </section>
+    </main>
+    <script src="../../js/script.js"></script>
+</body>
+</html>
