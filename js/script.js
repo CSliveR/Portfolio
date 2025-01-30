@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let path = window.location.pathname;
 let lang;
 
-if (path.includes("/fr/")) {
+if (path.includes("/fr/") || path === "/") {
     lang = "fr";
 }else if (path.includes("/en/")) {
     lang = "en";
@@ -89,8 +89,11 @@ const competencesBtn = document.querySelector('li:nth-child(5)');
 const contactBtn = document.querySelector('li:last-child');
 
 homeBtn.addEventListener('click', () => {
-    location.assign(`../../${lang}/pages/index.html`);
-
+    if(lang === 'fr'){
+        location.assign('/');
+    }else{
+        location.assign(`../../${lang}/pages/index.html`);
+    }
 });
 
 projetsIUTBtn.addEventListener('click', () => {
