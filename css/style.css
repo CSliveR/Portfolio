@@ -45,6 +45,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: var(--text-font-size);
     line-height: var(--text-line-height);
+    cursor: pointer;
     background-size: 200% 200%; 
     animation: gradientSlide 10s ease-in-out infinite; 
 }
@@ -99,9 +100,29 @@ p {
     text-align: justify;
 }
 
-a{
+a {
+    position: relative;
     text-decoration: none;
     color: var(--textColor);
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: currentColor; 
+    transition: width 0.3s ease-in-out; 
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.active::after{
+    width: 100%;
 }
 
 button{
@@ -114,15 +135,14 @@ button{
     color: var(--textColor);
 }
 
-nav ul li:hover, button:hover,.active, #dropdown-content a:hover, .cardContainer:hover{
+button:hover, #dropdown-content a:hover{
     background-color: var(--textColor);
     color: var(--textColorHover);
 }
+
 .resizeImg{width: 10rem;}
 
 .smallImg{height: 10rem;}
-
-#faceImg{margin-right: 5%; height: 14rem;}
 
 /*--------------------------------------------------------*/
 /*navbar style*/
@@ -135,35 +155,23 @@ nav ul li:hover, button:hover,.active, #dropdown-content a:hover, .cardContainer
     height: 90%;
 }
 
-header{
+header, footer{
     display: flex;
     position: sticky;
-    top: 0;
-    width: 100%;
-    height: 4em;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
     background-color: var(--textColorHover);
     z-index: 1;
 }
 
-header div{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-nav{
-    width:85%;
-}
-
 nav ul{
     display: flex;
+    gap: 3rem;
 }
 
 nav ul li{
     list-style-type: none;
-    padding: 1em; 
-    width: 100%;
-    text-align: center;
-    border-radius: 10rem;
     white-space: nowrap;
 }
 
@@ -212,17 +220,14 @@ body[actualTheme="dark"] #burger-menu i {
 /*languages dropdown menu style - end*/
 /*--------------------------------------------------------*/
 
-/* Initialisation de l'élément caché avant le scroll */
-.scroll-reveal > *{
-    opacity: 0;  /* Cacher l'élément par défaut */
-    transform: translateY(50px);  /* Positionner l'élément un peu en bas de son emplacement */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;  /* Animation de la transition */
+.revealEffect > * {
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-/* L'élément devient visible et se déplace à sa position d'origine une fois visible */
-.scroll-reveal > *.scroll-reveal-visible  {
+.show .revealEffect > * {
     opacity: 1;
-    transform: translateY(0);  /* L'élément revient à sa position d'origine */
+    transform: translateY(0);
 }
 
 /*--------------------------------------------------------*/
@@ -230,9 +235,23 @@ body[actualTheme="dark"] #burger-menu i {
 
 #homeTitle{
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    white-space: nowrap ;
     margin-bottom: 0.5em;
+}
+
+.smooth{
+    animation: smooth-this 1s 1;
+}
+
+@keyframes smooth-this {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .real .verticalContainer{
