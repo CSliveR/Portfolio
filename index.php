@@ -21,7 +21,7 @@
         <a href="https://www.linkedin.com/in/ilyes-drouiche-5b2695271/" target="_blank"><img src="/img/linkedin.png" alt="icone linkedin"></a>
         <a href="/pages/contact.php?lang=<?= $lang ?>"><img src="/img/gmail.png" alt="icone gmail"></a>
         <a href="https://github.com/CSliver" target="_blank"><img src="/img/github.png" alt="icone github"></a>
-        <a href="https://gitlab.com/CSliveR" target="_blank"><img src="/img/github.png" alt="icone github"></a>
+        <a href="https://gitlab.com/CSliveR" target="_blank"><img style="height:48px; width:48px;" src="/img/gitlab.png" alt="icone github"></a>
     </section>
 
     <section class="real">
