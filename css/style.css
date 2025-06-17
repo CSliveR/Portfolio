@@ -45,7 +45,6 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: var(--text-font-size);
     line-height: var(--text-line-height);
-    cursor: pointer;
     background-size: 200% 200%; 
     animation: gradientSlide 10s ease-in-out infinite; 
 }
@@ -235,9 +234,9 @@ body[actualTheme="dark"] #burger-menu i {
 
 #homeTitle{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    white-space: nowrap ;
     margin-bottom: 0.5em;
 }
 
@@ -326,14 +325,9 @@ textarea{
 
 @media screen and (max-width: 56.25rem){
     /*900px*/
-    .horizontalContainer{
+    .horizontalContainer, .gridContainer3{
         display: flex;
         flex-direction: column;
-    }
-
-    .gridContainer, .gridContainer3 {
-        grid-template-columns: 1fr; /* Une seule colonne */
-        gap: 1.5rem; 
     }
 
     #burgerBtn{

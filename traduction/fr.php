@@ -12,7 +12,7 @@ return [
     'Depuis presque 10 ans, j’ai passé beaucoup de temps avec un ordinateur entre les mains. 
     J’ai pu observer grâce à toutes ses années que cet outil est fascinant et permet des créations qui peuvent toucher n’importe qui.
     Que ce soit un site web, une application pour se divertir, apprendre ou aider des personnes ayant un besoin spécifique.
-    Participer à sa réalisation est depuis longtemps un idéal. C’est la raison pour laquelle j’étudie l’informatique afin de pouvoir y travailler
+    Participer à la réalisation de divers projets informatiques est depuis longtemps un idéal. C’est la raison pour laquelle j’étudie l’informatique afin de pouvoir y travailler
     plus tard. ',
     'index_SNS' => 'Retrouvez-moi sur',
     'index_h2' => 'Réalisations',
@@ -44,6 +44,7 @@ return [
     'sdesc_spaceinvaders' => 'Un petit jeu Space Invaders recréé avec HTML, CSS et JavaScript.',
 
     'btn_github' => 'Visiter le projet Github',
+    'btn_gitlab' => 'Visiter le projet Gitlab',
     'btn_site' => 'Accéder au site',
     'desc_project' => 'Description du projet',
     'skills_acquired' => 'Compétences acquises',
@@ -58,7 +59,6 @@ return [
     'cgi_skill_3' => 'Réaliser un site web en collaboration.',
     'cgi_skill_4' => 'Mettre en place des outils pour communiquer au sein de l\'équipe.',
 
-    'title_nutriscore' => 'Exploitation d\'une BD en SQL',
     'nutriscore_desc' =>
     'Pour ce projet, je devais réaliser une extraction de données sur une base de données open source (celle d\'OpenFood Facts) qui 
     recensait plusieurs centaines de produits avec diverses informations nutritionnelles ainsi que leurs nutriscores. Il a fallu explorer les données, 
@@ -140,7 +140,49 @@ return [
     'space_invaders_skill_2' => 'Être tenace face aux problèmes.',
     'space_invaders_skill_3' => 'Rechercher des informations sur internet ou sur de la documentation.',
 
+    "perseverance" => "La ténacité",
+    "listening" => "L'écoute",
+    "team_spirit" => "L'esprit d'équipe",
+    "languages" => "Langues",
+    "programming_languages" => "Langages de programmation",
+    "tools_and_technologies" => "Outils et technologies",
 
-];
+    "perseverance_text" => "Malgré les difficultés que je suis amené à rencontrer, je n'abandonne pas et je persiste. Je suis obstiné à passer outre les difficultés.",
+    "listening_text" => "J'essaie toujours d'être à l'écoute de ce que l'on exige de moi afin de répondre au mieux aux besoins de mon locuteur.",
+    "team_spirit_text" => "J'essaie de prendre en considération toutes les remarques des personnes avec lesquelles je collabore et de faire au mieux pour trouver la meilleure solution possible.",
+    "french_native" => "Français natif",
+    "english_level" => "Anglais : niveau intermédiaire (B2)",
+    "japanese_level" => "Japonais : niveau initié (A2)",
 
+    "level_advanced" => "Niveau avancé",
+    "level_intermediate" => "Niveau intermédiaire",
+    "level_beginner_plus" => "Niveau initié",
+    "level_beginner" => "Niveau débutant",
+
+    "contact_form_notice" => "Ce formulaire de contact n'est pas encore fonctionnel. Merci de votre compréhension.",
+    "placeholder_first_name" => "Prénom",
+    "placeholder_last_name" => "Nom",
+    "placeholder_email" => "Email",
+    "placeholder_subject" => "Objet",
+    "placeholder_message" => "Message",
+    "send_button" => "Envoyer",
+
+    'marapont_desc' =>
+    'Projet réalisé au sein d\'une équipe de sept personnes sur une durée de trois mois. L\'objectif était de développer une application valorisant le patrimoine culturel français. 
+    Après plusieurs séances de créativité, nous avons décidé de nous concentrer sur les ponts de France et avons nommé l\'application "Marapont". 
+    Le but de Marapont est de proposer un système de réservation d\'activités physiques et culturelles autour de ces ponts. 
+    La première phase du projet a consisté à analyser les besoins, définir des personas, ainsi que les exigences fonctionnelles et non fonctionnelles. 
+    Nous avons aussi défini l\'architecture logicielle, les outils utilisés et réalisé des maquettes des interfaces. 
+    Pendant la phase de développement, j\'ai implémenté une première version du panier d\'achats en TypeScript, qui a ensuite été reprise par mes collègues. 
+    Je me suis ensuite concentré sur le front-end : page FAQ, refonte de la page d\'accueil, animation au survol des éléments. 
+    Enfin, j\'ai rédigé l\'analyse sémiotique et sémiologique des interfaces de Marapont.',
+
+    'marapont_skill_1' => 'Collaboration dans un groupe de projet informatique.',
+    'marapont_skill_2' => 'Étude et formalisation des besoins utilisateurs.',
+    'marapont_skill_3' => 'Création de maquettes et conception visuelle d’interfaces.',
+    'marapont_skill_4' => 'Développement front-end avec Vue.js.',
+    'marapont_skill_5' => 'Implémentation backend en TypeScript.',
+    'marapont_skill_6' => 'Analyse sémiotique et sémiologique des interfaces.',
+    'visit_marapont' => 'Visiter Marapont'
+]
 ?>

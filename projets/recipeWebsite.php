@@ -4,7 +4,7 @@
     require(__DIR__ . '../../header.php'); 
 ?>
 
-<main>
+<main class="revealEffect">
     <h1><?= $trad['title_recipe'] ?></h1>
     <section class="horizontalContainer">
         <div class="verticalContainer">
@@ -30,8 +30,6 @@
         </div> -->
     </section>
 </main>
-
-    
 <?php 
     require(__DIR__ . '../../footer.php'); 
 ?>

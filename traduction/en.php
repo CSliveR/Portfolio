@@ -23,7 +23,7 @@ return [
 
     'title_ESN' => 'Website for an IT service company',
     'title_nutriscore' => 'DB management with SQL',
-    'title_chiefarena' => 'Chief\'s Arena',
+    'title_chiefs' => 'Chief\'s Arena',
     'title_bridge' => 'Marapont',
 
     'title_card' => 'Card battle game',
@@ -45,6 +45,7 @@ return [
     'desc_project' => 'Project Description',
     'skills_acquired' => 'Skills Acquired',
     'btn_github' => 'Visit Github project',
+    'btn_gitlab' => 'Visit the gitlab project',
     'btn_site' => 'Access the website',
 
 
@@ -58,7 +59,6 @@ return [
     'cgi_skill_3' => 'Develop a website collaboratively.',
     'cgi_skill_4' => 'Set up tools to communicate within the team.',
 
-    'title_nutriscore' => 'Database Exploitation with SQL',
     'nutriscore_desc' =>
     'For this project, I had to perform data extraction on an open-source database (OpenFood Facts), which 
     listed several hundred products with various nutritional information and their nutriscores. It was necessary to explore the data, 
@@ -73,7 +73,6 @@ return [
     'nutriscore_skill_6' => 'Creating charts with RStudio to visualize and analyze results',
     'nutriscore_skill_7' => 'Complete analysis of the results in English',
 
-    'title_chiefs' => 'Chief\'s Arena',
     'chiefs_desc' =>
     'As a team of six, we developed an event planning application in Java using JavaFX and SceneBuilder for the interfaces.
     After brainstorming sessions, we decided to create an app dedicated to cooking competitions and defined its name, logo, and slogan. 
@@ -138,5 +137,49 @@ return [
     'space_invaders_skill_2' => 'Learned to be persistent when facing problems.',
     'space_invaders_skill_3' => 'Practiced researching information online or in documentation.',
 
+    "perseverance" => "Perseverance",
+    "listening" => "Listening",
+    "team_spirit" => "Team Spirit",
+    "languages" => "Languages",
+    "programming_languages" => "Programming Languages",
+    "tools_and_technologies" => "Tools and Technologies",
 
+    "perseverance_text" => "Despite the difficulties I may face, I don't give up and I persist. I am determined to overcome obstacles.",
+    "listening_text" => "I always try to listen carefully to what is expected of me so I can best meet the needs of my interlocutor.",
+    "team_spirit_text" => "I try to consider all the feedback from the people I work with and do my best to find the best possible solution.",
+    "french_native" => "Native French speaker",
+    "english_level" => "English: intermediate level (B2)",
+    "japanese_level" => "Japanese: beginner level (A2)",
+
+    "level_advanced" => "Advanced level",
+    "level_intermediate" => "Intermediate level",
+    "level_beginner_plus" => "Beginner plus level",
+    "level_beginner" => "Beginner level",
+
+    "contact_me" => "Contact Me",
+    "contact_form_notice" => "This contact form is not functional yet. Thank you for your understanding.",
+    "placeholder_first_name" => "First Name",
+    "placeholder_last_name" => "Last Name",
+    "placeholder_email" => "Email",
+    "placeholder_subject" => "Subject",
+    "placeholder_message" => "Message",
+    "send_button" => "Send",
+
+    'marapont_desc' =>
+    'Project carried out within a team of seven people over a period of three months. The goal was to develop an application that promotes French cultural heritage.
+    After several creativity sessions, we decided to focus on the bridges of France and named the application "Marapont".
+    Marapont aims to offer a reservation system for physical and cultural activities around these bridges.
+    The first phase of the project involved analyzing needs, defining personas, and specifying functional and non-functional requirements.
+    We also defined the software architecture, selected the tools to be used, and created interface mockups.
+    During the development phase, I implemented an initial version of the shopping cart in TypeScript, which was later adapted by teammates.
+    I then focused on front-end tasks such as designing the FAQ page, improving the home page layout, and adding hover animations.
+    At the end of the project, I wrote the semiotic and semiological analysis of Marapont’s interfaces.',
+
+    'marapont_skill_1' => 'Collaboration within a software project team.',
+    'marapont_skill_2' => 'User needs analysis and formalization.',
+    'marapont_skill_3' => 'Mockup creation and visual interface design.',
+    'marapont_skill_4' => 'Front-end development with Vue.js.',
+    'marapont_skill_5' => 'Back-end implementation in TypeScript.',
+    'marapont_skill_6' => 'Semiotic and semiological interface analysis.',
+    'visit_marapont' => 'Visit Marapont',
 ];

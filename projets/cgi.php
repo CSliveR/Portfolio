@@ -3,7 +3,7 @@
     $currentNavPart = "projets-univ";
     require(__DIR__ . '../../header.php'); 
 ?>
-<main>
+<main class="revealEffect">
     <h1><?= $trad['title_ESN'] ?></h1>
     <section class="horizontalContainer">
         <div class="verticalContainer">

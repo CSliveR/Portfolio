@@ -3,17 +3,25 @@
     $currentNavPart = "projets-univ";
     require(__DIR__ . '../../header.php'); 
 ?>
-<div class="horizontalContainer">
-    <main>
-        <h1>MaraPont</h1>
-        <section class="horizontalContainer">
+<main class="revealEffect">
+    <h1>Marapont</h1>
+    <section class="horizontalContainer">
+        <div class="verticalContainer">
+            <h2><?= $trad['desc_project'] ?></h2>
+            <p><?= $trad['marapont_desc'] ?></p>
             <div class="verticalContainer">
-                <p style="font-size: xx-large; font-weight: bold; ">Cette page est en cours de rédaction </p>
-                <p style="font-size: xx-large; font-weight: bold; ">Merci pour votre compréhension</p>
-                <button onclick="window.location.href='https://marapont.fr'">Visiter MaraPont</button>
+                <h2><?= $trad['skills_acquired'] ?></h2>
+                <p><?= $trad['marapont_skill_1'] ?></p>
+                <p><?= $trad['marapont_skill_2'] ?></p>
+                <p><?= $trad['marapont_skill_3'] ?></p>
+                <p><?= $trad['marapont_skill_4'] ?></p>
+                <p><?= $trad['marapont_skill_5'] ?></p>
+                <p><?= $trad['marapont_skill_6'] ?></p>
             </div>
-        </section>
-    </main>
-</div>
+            <button onclick="window.location.href='https://gricad-gitlab.univ-grenoble-alpes.fr/iut2-info-stud/2024-s3/s3.01/team-10/marapont'"><?= $trad['btn_gitlab'] ?></button>
+            <button onclick="window.location.href='https://marapont.fr'"><?= $trad['visit_marapont'] ?></button>
+        </div>
+    </section>
+</main>
 <?php 
     require(__DIR__ . '../../footer.php'); ?>
