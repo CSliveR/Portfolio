@@ -3,30 +3,25 @@
     $currentNavPart = "contact";
     require(__DIR__ . '../../header.php'); 
 ?>
-<main class="verticalContainer revealEffect" id="contactMain">
+<main class="revealEffect">
     <h1><?= $trad["contact"] ?></h1>
-    <p><?= $trad["contact_form_notice"]?></p>
     <form method="post" action="traitement.php">
-        <div class="horizontalContainer">
-            <input id="Prenom" type="text" name="Prenom" placeholder="<?= $trad["placeholder_first_name"] ?>" required>
-            <input id="nom" type="text" name="nom" placeholder="<?= $trad["placeholder_last_name"] ?>" required>
-        </div>
+        <label for="prenom">Prénom :</label>
+        <input id="prenom" type="text" name="prenom" placeholder="<?= $trad["placeholder_first_name"] ?>" required>
 
-        <div>
-            <input id="email" type="email" name="email" placeholder="<?= $trad["placeholder_email"]  ?>" required>
-        </div>
+        <label for="nom">Nom :</label>
+        <input id="nom" type="text" name="nom" placeholder="<?= $trad["placeholder_last_name"] ?>" required>
 
-        <div>
-            <input id="objet" type="text" name="objet" placeholder="<?= $trad["placeholder_subject"] ?>" required>
-        </div>
+        <label for="email">Votre email :</label>
+        <input id="email" type="email" name="email" placeholder="<?= $trad["placeholder_email"] ?>" required>
 
-        <div>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="<?= $trad["placeholder_message"] ?>"></textarea>
-        </div>
-                        
-        <div>
-            <input id="envoi" type="submit" value="<?= $trad["send_button"] ?>">
-        </div>
+        <label for="objet">Objet :</label>
+        <input id="objet" type="text" name="objet" placeholder="<?= $trad["placeholder_subject"] ?>" required>
+
+        <label for="message">Votre message :</label>
+        <textarea id="message" name="message" rows="6" placeholder="<?= $trad["placeholder_message"] ?>" required></textarea>
+
+        <button type="submit" id="envoi"><?= $trad["send_button"] ?></button>
     </form>
 </main>
 <?php 

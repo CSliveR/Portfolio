@@ -1,16 +1,12 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
+    header('Content-Type: text/html; charset=UTF-8');
+    
+    setcookie("lang","fr",time()+60*60*24*7);
 
-if (!isset($_SESSION['lang'])) {
-    $_SESSION['lang'] = 'fr';
-}
+    if (isset($_GET['lang']) && in_array($_GET['lang'], ['fr', 'en', 'ja'])) {
+        $_COOKIE['lang'] = $_GET['lang'];
+    }
 
-if (isset($_GET['lang']) && in_array($_GET['lang'], ['fr', 'en', 'ja'])) {
-    $_SESSION['lang'] = $_GET['lang'];
-}
-
-$lang = $_SESSION['lang'];
-$trad = require(__DIR__ . "/traduction/{$lang}.php");
+    $lang = $_COOKIE['lang'];
+    $trad = require(__DIR__ . "/traduction/{$lang}.php");
 ?>

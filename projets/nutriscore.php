@@ -1,33 +1,30 @@
 <?php
-    $pageTitle = "Exploitation d'une BD";
+    $pageTitle = "Exploitation d'une BD (Nutriscore)";
     $currentNavPart = "projets-univ";
-    require(__DIR__ . '../../header.php'); 
+
+    // Clés de traduction
+    $projectTitleKey = 'title_nutriscore';
+    $projectDescKey  = 'nutriscore_desc';
+
+    $skillsKeys = [
+        'nutriscore_skill_1',
+        'nutriscore_skill_2',
+        'nutriscore_skill_3',
+        'nutriscore_skill_4',
+        'nutriscore_skill_5',
+        'nutriscore_skill_6',
+        'nutriscore_skill_7',
+    ];
+
+    $links = [
+        ['url' => 'https://github.com/CSliveR/BUT-1A/tree/main/S2.04', 'labelKey' => 'btn_github'],
+    ];
+
+    $images = [
+        // Exemple si tu veux réactiver les visuels plus tard
+        // ['src' => '/img/nutriscore1.png', 'alt' => 'Exemple de requête SQL Nutriscore'],
+        // ['src' => '/img/nutriscore2.png', 'alt' => 'Analyse des données Nutriscore'],
+    ];
+
+    require(__DIR__ . '/project_template.php');
 ?>
-<main class="revealEffect">
-    <h1><?= $trad['title_nutriscore'] ?></h1>
-    <section class="horizontalContainer">
-        <div class="verticalContainer">
-            <h2><?= $trad['desc_project'] ?></h2>
-            <p>
-                <?= $trad['nutriscore_desc'] ?>
-            </p>
-            <div class="verticalContainer">
-                <h2><?= $trad['skills_acquired'] ?></h2>
-                <p><?= $trad['nutriscore_skill_1'] ?></p>
-                <p><?= $trad['nutriscore_skill_2'] ?></p>
-                <p><?= $trad['nutriscore_skill_3'] ?></p>
-                <p><?= $trad['nutriscore_skill_4'] ?></p>
-                <p><?= $trad['nutriscore_skill_5'] ?></p>
-                <p><?= $trad['nutriscore_skill_6'] ?></p>
-                <p><?= $trad['nutriscore_skill_7'] ?></p>
-            </div>
-            <button onclick="window.location.href='https://github.com/CSliveR/BUT-1A/tree/main/S2.04'"><?= $trad['btn_github'] ?></button>
-        </div>
-        <!-- <div>
-            <img src="/img/nutriscore1.png" alt="Menu du jeu Space Invaders">
-            <img class="resizeImg" src="/img/nutriscore2.png" alt="Ecran de jeu Space Invaders">
-        </div> -->
-    </section>
-</main>
-<?php 
-    require(__DIR__ . '../../footer.php'); ?>

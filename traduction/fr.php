@@ -167,6 +167,7 @@ return [
     "placeholder_message" => "Message",
     "send_button" => "Envoyer",
 
+    'title_marapont' => "Marapont",
     'marapont_desc' =>
     'Projet réalisé au sein d\'une équipe de sept personnes sur une durée de trois mois. L\'objectif était de développer une application valorisant le patrimoine culturel français. 
     Après plusieurs séances de créativité, nous avons décidé de nous concentrer sur les ponts de France et avons nommé l\'application "Marapont". 

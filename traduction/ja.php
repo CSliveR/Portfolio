@@ -160,6 +160,7 @@ return [
     "placeholder_message" => "Message",
     "send_button" => "Send",
 
+    'title_marapont' => 'Marapont',
     'marapont_desc' =>
     'Project carried out within a team of seven people over a period of three months. The goal was to develop an application that promotes French cultural heritage.
     After several creativity sessions, we decided to focus on the bridges of France and named the application "Marapont".

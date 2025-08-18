@@ -1,5 +1,5 @@
-const sunBtn = document.getElementById('lightTheme');
-const moonBtn = document.getElementById('darkTheme');
+const sunBtn = document.querySelector('#lightTheme');
+const moonBtn = document.querySelector('#darkTheme');
 
 // Fonction pour activer le thème clair avec dégradé animé
 function activateLightTheme() {
@@ -25,7 +25,6 @@ function activateDarkTheme() {
     localStorage.setItem('theme', 'dark');
 }
 
-// Vérifie et applique le thème sauvegardé lors du chargement
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'dark') {
     activateDarkTheme();
@@ -38,7 +37,7 @@ sunBtn.addEventListener('click', activateLightTheme);
 moonBtn.addEventListener('click', activateDarkTheme);
 
 const header = document.querySelector('header');
-const burgerBtn = document.getElementById('burgerBtn');
+const burgerBtn = document.querySelector('#burgerBtn');
 
 burgerBtn.addEventListener('click', () => {
     header.classList.toggle('open-menu');
@@ -51,20 +50,3 @@ document.addEventListener("DOMContentLoaded", () => {
         element.classList.add("revealEffect-visible");
     });
 });
-
-/*async function smooth_home_title(){
-    let homeTitle = document.getElementById('homeTitle');
-    //let homeTitleText = homeTitle.innerHTML;
-    let homeTitleText = homeTitle.textContent;
-    homeTitle.innerHTML = "";
-
-    for(char of homeTitleText){
-        let span = document.createElement('span');
-        span.classList.add('smooth');
-        span.innerHTML = char === " " ? '&nbsp' : char;
-        homeTitle.appendChild(span);
-        await new Promise(resolve => setTimeout(resolve, 50));
-    }
-}
-
-smooth_home_title();*/
