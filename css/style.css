@@ -136,6 +136,11 @@ p{
     object-fit: contain;
 }
 
+.iconContainer{
+    display: flex;
+    align-items: center;
+}
+
 /*--------------------------------------------------------*/
 /*navbar style*/
 
@@ -270,17 +275,24 @@ nav ul li{
 /*pages/index.html style - end*/
 /*--------------------------------------------------------*/
 
-.projectsPage {
+.projectsPage{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     justify-items: center;
 }
 
-.cardContainer {
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
     border: 1px solid var(--textColor);
     border-radius: 10px;
+}
+
+.cardContainer:hover{
+    transform: scale(1.05);
 }
 
 .projectPage{
@@ -293,7 +305,7 @@ nav ul li{
 /*--------------------------------------------------------*/
 /*pages/contact.html style*/
 
-form {
+form{
     max-width: 750px;
     margin: auto;          
     display: flex;
@@ -301,23 +313,23 @@ form {
     gap: 0.5rem;
 }
 
-form input, form textarea {
+form input, form textarea{
     width: 100%;
     padding: 0.5rem;
     box-sizing: border-box;
 }
 
-form textarea {
+form textarea{
     resize: vertical;
     min-height: 150px;
 }
 
-#email:invalid:not(:placeholder-shown) {
+#email:invalid:not(:placeholder-shown){
     border-color: tomato;
     background-color: pink;
 }
 
-form button {
+form button{
     cursor: pointer;
     padding: 1rem 3rem;
     transition: all 0.3s ease;
@@ -325,7 +337,7 @@ form button {
     color: var(--textColor);
 }
 
-form button:hover {
+form button:hover{
     background-color: var(--textColor);
     color: var(--textColorHover);
 }

@@ -3,6 +3,7 @@ return [
     'home' => 'Accueil',
     'univ_projects' => 'Projets universitaires',
     'pers_projects' => 'Projets personnels',
+    'pro_experiences' => 'Expériences professionnelles',
     'skills' => 'Mes compétences',
     'contact' => 'Me contacter',
 
@@ -184,6 +185,45 @@ return [
     'marapont_skill_4' => 'Développement front-end avec Vue.js.',
     'marapont_skill_5' => 'Implémentation backend en TypeScript.',
     'marapont_skill_6' => 'Analyse sémiotique et sémiologique des interfaces.',
-    'visit_marapont' => 'Visiter Marapont'
+    'visit_marapont' => 'Visiter Marapont',
+        
+    // Titre et description courte pour les cartes d'aperçu
+    'title_iguaneo' => 'IGUANEO — Suivi de SAÉ',
+    'sdesc_iguaneo' => 'Application web et mobile de suivi et de gestion des Situations d\'Apprentissage et d\'Évaluation (SAÉ).',
+
+    // Description détaillée et compétences
+    'iguaneo_desc' => 'Commanditée par le département informatique de l\'IUT2 de Grenoble, l\'application IGUANEO a été conçue pour répondre à un besoin crucial de suivi et de gestion des SAÉ (Situation d\'Apprentissage et d\'Évaluation). Développée de manière transverse pour le web et le mobile, elle offre aux enseignants une interface de pilotage pour attribuer, évaluer et suivre la progression des livrables, tandis que les étudiants bénéficient d\'un espace collaboratif pour gérer leur projet, planifier leurs tâches et soumettre leurs travaux. Sur le plan architectural, l\'application s\'appuie sur une séparation stricte avec un frontend dynamique sous Angular et une API backend robuste propulsée par Node.js. La persistance des données complexes et des relations utilisateurs est assurée par une base de données PostgreSQL, tandis que l\'ensemble de l\'écosystème (client, serveur, base de données) est entièrement conteneurisé et orchestré via Docker pour garantir une portabilité et un déploiement simplifiés.',
+    'iguaneo_skill_1' => 'Analyse des besoins et recueil des expressions fonctionnelles pour un département universitaire.',
+    'iguaneo_skill_2' => 'Développement d\'une interface applicative web et mobile dynamique avec le framework Angular.',
+    'iguaneo_skill_3' => 'Conception et implémentation d\'une API REST performante et scalable sous Node.js.',
+    'iguaneo_skill_4' => 'Modélisation, structuration et requêtage d\'une base de données relationnelle PostgreSQL.',
+    'iguaneo_skill_5' => 'Conteneurisation, isolation et orchestration des différents services applicatifs à l\'aide de Docker.',
+    'iguaneo_skill_6' => 'Conception d\'un tableau de bord de suivi agile et d\'indicateurs de progression de projet (KPI).',
+    
+    // Nouveaux titres et résumés pour la page d'accueil / cards
+    'title_kapt' => 'Application Cuillère Code (Kapt)',
+    'title_adele' => 'Application ADELE (MSH-Alpes)',
+    
+    'sdesc_kapt' => 'Refonte complète et développement open source d’une application de génération de QR codes dynamiques et géolocalisés.',
+    'sdesc_adele' => 'Refonte technique et développement d’une application NoCode pour la création d’expérimentations comportementales scientifiques.',
+
+    // Description et compétences - STAGE KAPT (Cuillère Code)
+    'kapt_desc' => 'Réalisation de la refonte complète de l’ancienne application KapTag au sein de l’entreprise Kapt. Ce projet, baptisé "Cuillère Code" et développé en grande partie en open source, a consisté à concevoir une plateforme moderne axée sur la génération de QR codes dynamiques et géolocalisables. Après une phase de veille concurrentielle et de rédaction des spécifications techniques, j’ai initialisé le projet sous Django dans un environnement conteneurisé Docker (devenv). J’ai implémenté l’intégralité du système d’authentification sécurisé (avec intégration de captcha), le cycle de vie complet des QR codes (CRUD), le paramétrage personnalisé des attributs visuels (couleurs, bordures, formats de téléchargement PNG/SVG), un mécanisme de redirection interstitielle pour le suivi des statistiques, ainsi que des options de filtrage avancées.',
+    'kapt_skill_1' => 'Étude comparative d’outils du marché et rédaction de spécifications techniques détaillées.',
+    'kapt_skill_2' => 'Développement d’applications web avec le framework Django (Python) selon l’architecture MVT.',
+    'kapt_skill_3' => 'Prise en main et utilisation d’un environnement de développement virtualisé et conteneurisé sous Docker.',
+    'kapt_skill_4' => 'Mise en place d’un système d’authentification complet et de sécurisation des formulaires (Captcha).',
+    'kapt_skill_5' => 'Manipulation et génération d’images et fichiers vectoriels (PNG, SVG) via des scripts backend.',
+    'kapt_skill_6' => 'Conception d’un système de redirection HTTP et d’un modèle d’historisation pour le suivi des statistiques (scans).',
+
+    // Description et compétences - STAGE MSH-ALPES (ADELE)
+    'adele_desc' => 'Développement et refonte de l\’application ADELE pour la plateforme PLATIPUS au sein de la Maison des Sciences de l’Homme – Alpes. L’objectif de cet outil NoCode est de permettre aux chercheurs en sciences humaines et sociales de concevoir des expériences comportementales complexes sans connaissances préalables en programmation web. J’ai d’abord corrigé le modèle conceptuel de données Merise de la base de données. J’ai ensuite intégralement restructuré l’API backend en PHP Vanilla, remplaçant un mécanisme obsolète et dupliqué de sessions PHP par une authentification par jetons JWT (JSON Web Tokens) sécurisée et autoportante. Pour fiabiliser les opérations d’écriture et de suppression en cascade des modules (groupes et questions), j’ai mis en place des transactions SQL strictes. Enfin, en suivant un workflow rigoureux testé sur Postman, j’ai développé l’interface client selon le modèle MVC en JavaScript pur et gabarits HTML encapsulés, permettant la génération dynamique de stimuli JSPsych et l\’exportation de packages interopérables directement exploitables sur les serveurs d\'exécution JATOS.',
+    'adele_skill_1' => 'Audit, correction et optimisation de schémas conceptuels de données (MERISE) sous MySQL.',
+    'adele_skill_2' => 'Conception d’architectures API REST backend modulaires et sécurisées en PHP Vanilla.',
+    'adele_skill_3' => 'Implémentation d’une authentification moderne et décentralisée par jetons JSON Web Tokens (JWT).',
+    'adele_skill_4' => 'Sécurisation et fiabilisation de requêtes SQL complexes et en cascade via des blocs de transactions.',
+    'adele_skill_5' => 'Développement frontend modulaire en JavaScript pur respectant rigoureusement le modèle MVC.',
+    'adele_skill_6' => 'Utilisation avancée de gabarits (templates HTML / balises <template>) pour dynamiser l’affichage sans innerHTML.',
+    'adele_skill_7' => 'Interfaçage de solutions web NoCode avec des bibliothèques scientifiques tierces (JSPsych) et serveurs d’exécution (JATOS).',
 ]
 ?>

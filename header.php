@@ -34,6 +34,9 @@
                 <a href="/pages/projets-perso.php?lang=<?= $lang ?>" class="<?= $currentNavPart === 'projets-perso' ? 'active' : '' ?>"><?= $trad['pers_projects'] ?></a>
             </li>
             <li>
+                <a href="/pages/experiences-pro.php?lang=<?= $lang ?>" class="<?= $currentNavPart === 'experiences-pro' ? 'active' : '' ?>"><?= $trad['pro_experiences'] ?></a>
+            </li>
+            <li>
                 <a href="/pages/competences.php?lang=<?= $lang ?>" class="<?= $currentNavPart === 'competences' ? 'active' : '' ?>"><?= $trad['skills'] ?></a>
             </li>
             <li>

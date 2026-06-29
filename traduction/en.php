@@ -3,6 +3,7 @@ return [
     'home' => 'Home',
     'univ_projects' => 'University Projects',
     'pers_projects' => 'Personal Projects',
+    'pro_experiences' => 'Professional experiences',
     'skills' => 'My Skills',
     'contact' => 'Contact Me',
 
@@ -183,4 +184,43 @@ return [
     'marapont_skill_5' => 'Back-end implementation in TypeScript.',
     'marapont_skill_6' => 'Semiotic and semiological interface analysis.',
     'visit_marapont' => 'Visit Marapont',
+    
+    // Title and short description for cards
+    'title_iguaneo' => 'IGUANEO — SAÉ Tracking',
+    'sdesc_iguaneo' => 'Web and mobile application designed for tracking and managing Learning and Evaluation Situations (SAÉ).',
+
+    // Detailed description and skills
+    'iguaneo_desc' => 'Commissioned by the computer science department of IUT2 de Grenoble, the IGUANEO application was built to fulfill a critical need for tracking and managing SAÉs (Learning and Evaluation Situations). Developed as a cross-platform solution for both web and mobile, it provides teachers with a steering dashboard to assign, evaluate, and monitor the progress of deliverables, while students benefit from a collaborative workspace to manage their projects, plan tasks, and submit their work. Structurally, the application strictly decouples its concerns using a dynamic Angular frontend and a robust backend API powered by Node.js. Data persistence for complex relational user data is managed via a PostgreSQL database, while the entire ecosystem (client, server, and database) is fully containerized and orchestrated using Docker to ensure seamless portability and deployment.',
+    'iguaneo_skill_1' => 'Requirements gathering and functional analysis tailored for an academic institution department.',
+    'iguaneo_skill_2' => 'Developing a cross-platform web and mobile user interface using the Angular framework.',
+    'iguaneo_skill_3' => 'Designing and implementing a high-performance, scalable RESTful API with Node.js.',
+    'iguaneo_skill_4' => 'Modeling, structuring, and querying a PostgreSQL relational database system.',
+    'iguaneo_skill_5' => 'Containerizing, isolating, and orchestrating full-stack services using Docker ecosystem tools.',
+    'iguaneo_skill_6' => 'Designing project progression indicators, agile tracking metrics, and collaborative dashboards.',
+
+    // New titles and short descriptions for cards
+    'title_kapt' => 'Cuillère Code Application (Kapt)',
+    'title_adele' => 'ADELE Application (MSH-Alpes)',
+    
+    'sdesc_kapt' => 'Complete refactoring and open-source development of an application for generating dynamic and geolocated QR codes.',
+    'sdesc_adele' => 'Technical refactoring and development of a NoCode application for creating scientific behavioral experiments.',
+
+    // Description and skills - KAPT INTERNSHIP (Cuillère Code)
+    'kapt_desc' => 'Carried out the complete refactoring of the legacy KapTag application at Kapt company. This project, named "Cuillère Code" and developed largely as open-source software, focused on designing a modern platform for generating dynamic and geolocated QR codes. Following a phase of competitive benchmarking and technical specifications drafting, I initialized the project under Django within a containerized Docker development environment (devenv). I implemented the entire secure authentication system (including captcha integration), the full lifecycle of QR codes (CRUD), customized settings for visual attributes (colors, borders, PNG/SVG download formats), an interstitial redirection mechanism to track usage data, as well as advanced filtering options.',
+    'kapt_skill_1' => 'Market tools benchmarking and drafting of comprehensive technical specification documents.',
+    'kapt_skill_2' => 'Web development using the Django framework (Python) based on MVT architecture.',
+    'kapt_skill_3' => 'Hands-on experience with containerized and virtualized development environments using Docker.',
+    'kapt_skill_4' => 'Implementation of a complete user authentication system and form security reinforcement (Captcha).',
+    'kapt_skill_5' => 'Handling and generating images and vector files (PNG, SVG) through backend scripting.',
+    'kapt_skill_6' => 'Designing an HTTP redirection workflow and a tracking model to log scan statistics.',
+
+    // Description and skills - MSH-ALPES INTERNSHIP (ADELE)
+    'adele_desc' => 'Developed and refactored the ADELE application for the PLATIPUS platform at the Maison des Sciences de l’Homme – Alpes. The goal of this NoCode tool is to enable social sciences researchers to build complex behavioral experiments without web programming skills. I first audited and optimized the initial database schema using the Merise methodology. Then, I overhauled the backend API in Vanilla PHP, replacing a legacy fragmented PHP session mechanism with a secure, self-contained JSON Web Token (JWT) authentication system. To guarantee data integrity during complex cascading data modifications and deletions across core business modules (groups and questions), I introduced robust SQL transactions. Finally, following a strict workflow validated with Postman, I built the client-side interface using a pure JavaScript MVC pattern combined with PHP-encapsulated HTML templates. This allows dynamic configuration of JSPsych stimuli and the compilation of experiment packages directly compatible with JATOS execution servers.',
+    'adele_skill_1' => 'Auditing, refining, and optimizing conceptual data models (Merise) under MySQL databases.',
+    'adele_skill_2' => 'Designing modular and secure backend REST APIs from scratch using Vanilla PHP.',
+    'adele_skill_3' => 'Implementing modern, decentralized authentication workflows using JSON Web Tokens (JWT).',
+    'adele_skill_4' => 'Securing complex cascading database operations through robust SQL transactions.',
+    'adele_skill_5' => 'Building a clean, decoupled frontend architecture following the MVC design pattern in pure JavaScript.',
+    'adele_skill_6' => 'Advanced handling of client-side dynamic rendering using HTML <template> tags rather than innerHTML string injections.',
+    'adele_skill_7' => 'Bridging visual NoCode systems with specialized scientific frameworks (JSPsych) and execution engines (JATOS).',
 ];

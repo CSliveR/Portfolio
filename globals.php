@@ -8,5 +8,5 @@
     }
 
     $lang = $_COOKIE['lang'];
-    $trad = require(__DIR__ . "/traduction/{$lang}.php");
+    $trad = require __DIR__ . "/traduction/{$lang}.php";
 ?>
